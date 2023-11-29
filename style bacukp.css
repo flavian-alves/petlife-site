@@ -129,21 +129,10 @@ h1, h2{
     border-bottom: 2px solid #ff725e;
     border-right: 2px solid #ff725e;
     border-radius: 0 0 15px 15px;
-    padding: 0 20px;
+    padding: 20px;
     font-size: 15px;
     text-align: justify;
     margin-top: -15px;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-}
-
-.duvida.ativa .paragrafo{
-    height: max-content;
-    opacity: 1;
-    padding: 24px;
-    transition: 0.5s;
-    
 }
 
 footer {
