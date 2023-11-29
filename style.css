@@ -17,23 +17,21 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-a{
-    text-decoration: none;
-    color: #263138;
-    font-weight: 600;
-}
+
 header nav a{
     color: white;
     font-weight: 600;
     padding: 30px;
+    text-decoration: none;
 }
 
-section{
+#inicio{
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding: 24px 80px 128px;
+    gap: 40px;
+    padding: 24px 80px 128px 80px;
     justify-content: space-between;
+    position: relative;
 }
 
 /*#farmacia{
@@ -47,4 +45,138 @@ h1, h2{
     font-size: 32px;
 }
 
+.paragrafo{
+    line-height: 150%;
+    padding-bottom: 32px;
+}
 
+.botao{
+    color: white;
+    font-weight: 600;
+    background-color: #FF9A6C;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.botao-transparente{
+    font-weight: 600;
+    background-color: transparent;
+    color: #FF9A6C;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-underline-offset: 5px;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -20;
+}
+
+#clinica, #duvidas{
+    display: flex;
+    align-items: center;
+    padding: 24px 80px 24px;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#clinica li{
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+#farmacia{
+    text-align: center;
+    padding: 64px 64px;
+}
+
+#farmacia img{
+    margin: 0px auto 30px;
+}
+
+#farmacia .paragrafo{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.duvida{
+    position: relative; /*diz que os filhos terão posição relativas a ele, ou seja, ficarão dentro do espaço dele, sendo o pai*/
+    padding: 10px;
+}
+
+.duvida h3{
+    border: 3px solid #ff725e;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.duvida img{
+    position: absolute; /*informa que a posição será absoluta mas em relação a posição relativa do pai (.duvida, que tem o atributo position: relative)*/
+    top: 32px; /*distancia que deve ficar dentro do bloco pai*/
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border: 2px solid #ff725e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: -15px;
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex; /*alinha os blocos verticalmente*/
+    gap: 80px; /*define o espaçamento entre os blocos*/
+    padding: 64px 80px;
+    justify-content: space-between;
+}
+
+
+footer img, footer .titulo{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 30px;
+}
+
+footer p{
+    font-size: 14px;
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+footer nav a{
+    display: block; /*torna o nav em bloco, quebrando as linhas, deixando um link abaixo do outro, o padrão é ficarem em linha (inline-block)*/
+    text-decoration: none;
+    color: #263138;
+    margin-bottom: 16px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #ff725e;
+}
+
+#rodape{
+    background-color: #263138;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#rodape a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #FF9A6C;
+}
+
+/*baixei o video dessa video aula*/
